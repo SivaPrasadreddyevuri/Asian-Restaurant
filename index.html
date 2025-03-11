@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project for HTML CSS</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .md {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .home {
+      background-image: url(./images/banner-bg.jpg);
+      color: white;
+      height: 450px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .home p {
+      text-align: center;
+    }
+    .order_:active{
+        transform: scale(0.9,0.9);
+    }
+    .cook {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 280px;
+      justify-content: center;
+      padding: 80px;
+    }
+    .cook img {
+      width: 275px;
+      position: relative;
+    }
+    .c1 {
+      position: absolute;
+      border: solid, rgb(240, 91, 36);
+      color: white;
+      background-color: rgb(245, 92, 36);
+      text-align: center;
+      width: 260px;
+      height: 250px;
+      padding: 10px;
+      margin-top: -30px;
+      /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+    }
+    .c1:hover {
+      width: 282px;
+      height: 262px;
+      background-color: orangered;
+    }
+    .ck1:hover {
+      transform: translate(-50px);
+      border: 1px solid;
+      height: 206.5px;
+      box-shadow: 10px 10px 10px green;
+    }
+    .ck2:hover {
+      transform: translate(40px);
+      border: 1px solid;
+      height: 206.5px;
+      box-shadow: 10px 10px 10px green;
+    }
+    .catg {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 160px;
+      justify-content: center;
+      padding: 60px;
+    }
+    .catg p {
+      text-align: center;
+    }
+    .cat1:hover {
+      transform: scale(1.5, 1.5);
+    }
+    .cat2:hover {
+      transform: scale(1.5, 1.5);
+    }
+    .cat3:hover {
+      transform: scale(1.5, 1.5);
+    }
+    .cat4:hover {
+      transform: scale(1.5, 1.5);
+    }
+    .book {
+      background-image: url(./images/book-bg.jpg);
+      height: 390px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 73px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .form {
+      background-color: white;
+      width: 300px;
+      height: 227px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .form input {
+      width: 100px;
+    }
+    .app {
+      background-color: rgb(248, 112, 63);
+      height: 100px;
+      margin-top: -16px;
+      padding: 40px;
+    }
+    .app p {
+      text-align: center;
+    }
+    .wf {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 90px;
+      position: relative;
+    }
+    .bf,
+    .ln,
+    .dn {
+      background-color: whitesmoke;
+      padding: 5px;
+    }
+    .bf ~ img {
+      position: relative;
+    }
+    h3 {
+      position: absolute;
+      margin-top: -60px;
+    }
+    h4 {
+      position: absolute;
+      margin-left: 261px;
+      margin-top: 153px;
+      background-color: rgb(199, 187, 187);
+      color: rgb(226, 81, 29);
+      padding: 4.5px;
+    }
+    .bf:hover,.ln:hover,.dn:hover{
+      transform: scale(1.04, 1.04);
+      border: 1px solid green;
+      border-radius: 14px;
+      box-shadow: 2px 2px 20px whitesmoke;
+      border: none;
+      background-color:lightcoral;
+    }
+    /* .ln:hover {
+      transform: scale(1.1, 1.1);
+      border: 1px solid green;
+      border-radius: 14px;
+      box-shadow: 5px 5px 25px green;
+      border: none;
+    } */
+    /* .dn:hover {
+      transform: scale(1.1, 1.1);
+      border: 1px solid green;
+      border-radius: 14px;
+      box-shadow: 5px 5px 25px green;
+      border: none;
+    } */
+    .blog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 90px;
+      padding: 70px;
+      background-color: rgba(251, 235, 235, 0.618);
+      /* position: relative; */
+      /* height: 320px; */
+    }
+    .blog .p1 {
+      position: absolute;
+      margin-top: -40px;
+      font-size: 25px;
+    }
+    .b1,
+    .b2,
+    .b3,
+    .b4 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .blog img {
+      width: 240px;
+      height: 274px;
+      position: relative;
+    }
+    .blog .p2 {
+      position: absolute;
+      margin-top: 0px;
+      color: rgb(226, 58, 7);
+      background-color: rgba(233, 241, 241, 0.859);
+      padding: 10px;
+    }
+    .b_p3{
+      background-color: white;
+      width: 240px;
+      margin-top: 0px;
+      height:265px;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      padding: 5px;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    #footer {
+      background-image: url(./images/signup-bg.jpg);
+      height: 80px;
+      color: white;
+      text-align: center;
+      padding: 63px;
+    }
+    .end {
+      background-color: grey;
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 30px;
+    }
+    @media screen   and (min-width:320px) and (max-width:629px){
+      .b_p3 {
+       width: 230px;
+      }
+    }
+    @media screen   and (min-width:320px) and (max-width:435px){
+      .ck2,.ck1{
+       width: 400px;
+      }
+      .c1{
+        margin-top: 200px;
+      }
+      .cook{
+        gap: 260px;   
+      }
+    }
+    @media screen   and (min-width:435px) and (max-width:768px){
+      .ck2,.ck1{
+       width: 280px;
+      }
+      .c1{
+        margin-top: 170px;
+      }
+      .cook{
+        gap: 200px;   
+      }
+    }
+    @media screen   and (min-width:768px) and (max-width:989px){
+      .ck2,.ck1{
+       width: 276px;
+      }
+      .c1{
+        margin-top: 200px;
+      }
+      .cook{
+        gap: 260px;   
+      }
+    }
+    @media screen   and (min-width:972px) and (max-width:1440px) {
+      .ck2,.ck1{
+       width: 276px;
+      }
+      .c1{
+        margin-top: -30px;
+      }
+      .cook{
+        gap: 260px;   
+      }
+    }
+  </style>
+  <body>
+    <h1 style="text-align: center; font-size: xxx-large">Victory</h1>
+    <hr style="width: 80vw; opacity: 0.3;"/>
+    <nav class="md">
+      <a href="#h1"> <p>HOME</p></a>
+      <a href="#menu"><p>OUR MENUS</p></a>
+      <a href="#entries"><p>BLOG ENTRIES</p></a>
+      <a href="#end1"><p>CONTACT US</p></a>
+    </nav>
+    <div class="home" id="h1">
+      <p>HERE YOU CAN FIND DELECIOUS FOOD</p>
+      <p style=" font-size: 36px">ASIAN RESTAURANT</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        voluptatem inventore quia accusantium modi deserunt, sint suscipit nihil
+        accusamus ea quos eligendi qui pariatur? Nulla qui ipsam deleniti ipsum
+        cumque.
+      </p>
+      <p
+        style="
+          background-color: rgba(255, 68, 0, 0.91);
+          width: 160px;
+          margin: auto;
+          border-radius: 10px;
+          padding: 10px;
+        "
+       class="order_">
+        ORDER RIGHT NOW
+      </p>
+    </div>
+    <div class="cook">
+      <div class="ck1"><img src="./images/cook_01.jpg" alt="" /></div>
+      <div class="ck2"><img src="./images/cook_02.jpg" alt="" /></div>
+      <div class="c1">
+        <p>WE COOK DELECIOUS</p>
+        <p style="background-color: rgba(64, 50, 50, 0.221); padding: 10px">
+          YOU CAN CALL US ON:<br /><br />+1234 567 8910
+        </p>
+        <p
+          style="
+            background-color: rgb(233, 175, 175);
+            width: 30px;
+            margin: auto;
+            border-radius: 100px;
+            padding: 1px;
+          "
+        >
+          OR
+        </p>
+        <br />
+        <p class="order_"
+          style="
+            background-color: white;
+            color: orangered;
+            width: 110px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+          "
+        >
+          ORDER NOW
+        </p>
+      </div>
+    </div>
+    <div class="catg" id="menu">
+      <div class="cat1">
+        <img src="./images/cook_breakfast.png" alt="" />
+        <p>Breakfast</p>
+      </div>
+      <div class="cat2">
+        <img src="./images/cook_lunch.png" alt="" />
+        <p>Lunch</p>
+      </div>
+      <div class="cat3">
+        <img src="./images/cook_dinner.png" alt="" />
+        <p>Dinner</p>
+      </div>
+      <div class="cat4">
+        <img src="./images/cook_dessert.png" alt="" />
+        <p>Dessert</p>
+      </div>
+    </div>
+    <div class="book">
+      <p
+        style="
+          color: white;
+          padding: 40px;
+          position: absolute;
+          margin-top: -90px;
+        "
+      >
+        BOOK YOUR TABLE NOW
+      </p>
+      <div>
+        <img
+          src="./images/book_left_image.jpg"
+          alt=""
+          width="280px"
+          height="227.5px"
+        />
+      </div>
+      <div class="form">
+        <p style="text-align: center">Reservation</p>
+        <input type="date" />
+        <input type="time" /><br><br>
+        <input type="text" placeholder="Fullname" />
+        <input type="mblno" placeholder="Phone number" /><br><br>
+        <input type="text" placeholder="How many peersons" />
+        <button
+          style="
+            background-color: rgb(243, 96, 43);
+            padding: 5px;
+            color: white;
+            border-radius: 3px;
+          "
+        >
+          BOOK TABLE
+        </button>
+      </div>
+    </div>
+    <div class="app">
+      <p>GET APPLICATION FOR YOUR PHONE</p>
+      <p
+        style="
+          background-color: white;
+          color: rgb(238, 111, 65);
+          width: 138px;
+          margin: auto;
+          padding: 9px;
+          border-radius: 2px;
+        "
+      >
+        DOWNLOAD NOW
+      </p>
+    </div>
+    <div class="wf">
+      <h3>WEEKLY FEATURED FOOD</h3>
+      <div class="bf">
+        <p>Breakfast</p>
+        <hr />
+        <h4>$4.50</h4>
+        <img src="./images/breakfast_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+      <div class="ln">
+        <p>Lunch</p>
+        <hr />
+        <h4>$7.50</h4>
+        <img src="./images/lunch_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+      <div class="dn">
+        <p>Dinner</p>
+        <hr />
+        <h4 style="margin-left: 252px">$12.50</h4>
+        <img src="./images/dinner_item.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />? adipisicing elit.
+          Voluptatem quidem,<br />
+          hic totam, eveniet reprehenderit<br />
+          harum possimus culpa sed excepturi <br />repellendus, omnis molestiae!
+          Quia delectus <br />porro natus itaque iusto at dolorem.
+        </p>
+      </div>
+    </div>
+    <div class="blog" id="entries">
+      <p class="p1"><strong>OUR BLOG POST</strong></p>
+      <div class="b1">
+        <img src="./images/blog_post_01.jpg" alt="" />
+        <p class="p2">26 OCT 2017</p>
+        <p class="b_p3"><strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam.Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+      <div class="b2">
+        <img src="./images/blog_post_02.jpg" alt="" />
+        <p class="p2">21 OCT 2017</p>
+        <p class="b_p3">
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+      <div class="b3">
+        <img src="./images/blog_post_03.jpg" alt="" />
+        <p class="p2">11 OCT 2017</p>
+        <p class="b_p3">
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+      <div class="b4">
+        <img src="./images/blog_post_04.jpg" alt="" />
+        <p class="p2">03 OCT 2017</p>
+        <p class="b_p3">
+          <strong>Stumptown Tofu Schlitz</strong
+          ><br /><br />Branding/Admin<br /><br />Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Vero quia eos reiciendis minus quam
+          libero voluptatibus accusamus inventore ipsa laborum, ipsam ducimus
+          consequuntur repudiandae excepturi nam. Voluptatem, beatae nisi!
+          Suscipit?
+        </p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>SIGNUP FOR OUR NEWSLETTERS</p><br>
+      <input type="email" required style="border-radius:1px ; width: 200px; height:25px ;" placeholder="Enter your email"/>
+      <button style="width: 125px; height: 25px;">SEND MESSAGE</button>
+    </div>
+    <div class="end" id="end1">
+      <div>copyright@2024 Victory Template</div>
+      <div>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="-2.4 -2.4 28.80 28.80"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0">
+            <!-- <rect x="-2.4" y="-2.4" width="14" height="14" rx="14.4" fill="#fafafa" strokewidth="0"/> -->
+          </g>
+
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <path
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 8.437c-5.115-4.583-12.885-4.583-18 0m15.333 2.982a9.501 9.501 0 0 0-12.666 0m10 2.981a5.5 5.5 0 0 0-7.334 0M12 18.5l1-1.118a1.5 1.5 0 0 0-2 0l1 1.118Z"
+            />
+          </g>
+        </svg>
+        <svg
+          fill="#000000"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24.00 24.00"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#fdfcfc"
+          stroke-width="0.00024000000000000003"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#120202"
+            stroke-width="1.9200000000000004"
+          >
+            <path
+              d="M22,3V21a1,1,0,0,1-1,1H15.8V14.255h2.6l.39-3.018H15.8V9.309c0-.874.242-1.469,1.5-1.469h1.6V5.14a21.311,21.311,0,0,0-2.329-.119A3.636,3.636,0,0,0,12.683,9.01v2.227H10.076v3.018h2.607V22H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H21A1,1,0,0,1,22,3Z"
+            ></path>
+          </g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M22,3V21a1,1,0,0,1-1,1H15.8V14.255h2.6l.39-3.018H15.8V9.309c0-.874.242-1.469,1.5-1.469h1.6V5.14a21.311,21.311,0,0,0-2.329-.119A3.636,3.636,0,0,0,12.683,9.01v2.227H10.076v3.018h2.607V22H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H21A1,1,0,0,1,22,3Z"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          fill="#000000"
+          width="24px"
+          height="24px"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"
+              fill="#000000"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div>Desined by Shiva</div>
+    </div>
+  </body>
+</html>
